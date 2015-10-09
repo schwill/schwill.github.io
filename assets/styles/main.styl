@@ -1,0 +1,53 @@
+@import "vendor/normalize"
+
+color-primary = #CF4646
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+  position: relative
+
+html,
+body,
+main
+  box-sizing: border-box
+  font-family: 'Open Sans', sans-serif
+  font-weight: 400
+  height: 100%
+  width: 100%
+  -webkit-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+  -webkit-font-feature-settings: 'liga', 'kern'
+  -moz-font-feature-settings: 'liga', 'kern'
+  font-feature-settings: 'liga', 'kern'
+
+.welcome
+  left: 50%
+  text-align: center
+  top: 50%
+  transform: translate(-50%, -50%)
+  transform-style: preserve-3d
+
+h1
+  color: color-primary
+  font-size: 40px
+  font-weight: 300
+  line-height: 60px
+  margin-bottom: 60px
+
+.btn
+  background-color: transparent
+  border-radius: 3px
+  border: 2px solid color-primary
+  color: color-primary
+  cursor: pointer
+  font-size: 22px
+  padding: 15px 20px 16px
+  text-decoration: none
+  transition: all .15s linear
+  &:hover
+    background-color: color-primary
+    color: white
